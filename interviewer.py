@@ -21,45 +21,33 @@ class Interviewer(object):
         self.POSITIVE_REMARK = ["Good.", "Excellent!", "Sounds great!", "That's awesome!", "Wonderful!"]
         self.NEGATIVE_REMARK = ["I'm sad to hear that.", "That doesn't sound very good.", "I'm sad to hear that.", "ah", "Someone forgot to have their coffee today"]
         self.questions = ['Tell me about yourself',
-                # What a beautiful day today at Galvanize.
-                # I am a data scientist that recently graduated from the awesome Galvanize
-                # Data Science Program
             'Tell me about a recent project that you worked on',
-                # I loved working at the IBM cognitive builder faire, where we used the IBM Watson 
-                # API to build an AI Interviewer and it was super cool.
             'What are your greatest weaknesses?',
-                # I have no weaknesses, since I work them out at the gym. Now all I have are strengths
             'What did you dislike the most about your last job?',
-                # I absolutely hated my last job because it did not have enough data science
-                # in it
             'If you were an animal, which one would you want to be?',
-                # I would be a dolphin because I love to swim in the pacific ocean
             'What are your hobbies?',
-                # I like writing code and talking to AI.  It's my favorite past time.
-
-            # 'What is your greatest professional achievement?',
-            # 'Why do you want to work here?',
-            # 'What are your strengths?',
-            # 'Where do you see yourself in five years?',
-            # 'What type of work environment do you prefer?',
-            # "What's a time you disagreed with a decision that was made at work?",
-            # 'Why was there a gap in your employment?',
-            # 'Can you explain why you changed career paths?',
-            # 'How do you deal with pressure or stressful situations?',
-            # 'What would your first 30, 60, or 90 days look like in this role?',
-            # 'What are your salary requirements?',
-            # 'How many tennis balls can you fit into a limousine?',
-            # 'Are you planning on having children?',
-            # 'How many ping pong balls fit on a 737?',
-            # 'Describe a difficult work situation / project and how you overcame it',
-            # 'How are you different from the competition?',
-            # 'Do you take work home with you?',
-            # 'How do you view yourself? Whom do you compare yourself to?',
-            # 'What motivates you',
-            # 'What did you like most about your last job?',
-            # 'What did you dislike most about your last job?',
-            # 'Why should I take a risk on you?',
- ]
+            'What is your greatest professional achievement?',
+            'Why do you want to work here?',
+            'What are your strengths?',
+            'Where do you see yourself in five years?',
+            'What type of work environment do you prefer?',
+            "What's a time you disagreed with a decision that was made at work?",
+            'Why was there a gap in your employment?',
+            'Can you explain why you changed career paths?',
+            'How do you deal with pressure or stressful situations?',
+            'What would your first 30, 60, or 90 days look like in this role?',
+            'What are your salary requirements?',
+            'How many tennis balls can you fit into a limousine?',
+            'Are you planning on having children?',
+            'How many ping pong balls fit on a 737?',
+            'Describe a difficult work situation / project and how you overcame it',
+            'How are you different from the competition?',
+            'Do you take work home with you?',
+            'How do you view yourself? Whom do you compare yourself to?',
+            'What motivates you',
+            'What did you like most about your last job?',
+            'What did you dislike most about your last job?',
+            'Why should I take a risk on you?']
         self.text_to_speech = TextToSpeechV1(
             x_watson_learning_opt_out=True)  # Optional flag
         self.speech_to_text = SpeechToTextV1(
